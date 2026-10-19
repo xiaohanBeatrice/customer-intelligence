@@ -1,0 +1,50 @@
+[
+  {
+    "segment": "Affluent High-Value",
+    "customers": 539,
+    "avg_income": 76766.99,
+    "avg_age": 45.08,
+    "avg_spent": 1306.72,
+    "avg_children": 0.21,
+    "avg_web_visits": 2.39,
+    "response_rate": 0.24,
+    "share_of_customers": 0.244,
+    "share_of_revenue": 0.524
+  },
+  {
+    "segment": "Established Families",
+    "customers": 495,
+    "avg_income": 60895.94,
+    "avg_age": 50.55,
+    "avg_spent": 948.86,
+    "avg_children": 0.99,
+    "avg_web_visits": 5.87,
+    "response_rate": 0.17,
+    "share_of_customers": 0.224,
+    "share_of_revenue": 0.35
+  },
+  {
+    "segment": "Price-Sensitive New",
+    "customers": 581,
+    "avg_income": 42862.85,
+    "avg_age": 48.77,
+    "avg_spent": 156.74,
+    "avg_children": 1.5,
+    "avg_web_visits": 5.47,
+    "response_rate": 0.04,
+    "share_of_customers": 0.263,
+    "share_of_revenue": 0.068
+  },
+  {
+    "segment": "Young Online Browsers",
+    "customers": 590,
+    "avg_income": 30806.25,
+    "avg_age": 36.89,
+    "avg_spent": 132.18,
+    "avg_children": 1.05,
+    "avg_web_visits": 7.31,
+    "response_rate": 0.16,
+    "share_of_customers": 0.268,
+    "share_of_revenue": 0.058
+  }
+]

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "客户表，一行一个客户。已清洗，可疑数据用 is_ 开头的列标记。"
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: enrolled_date
+        tests: [not_null]
+      - name: education
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Basic', '2n Cycle', 'Graduation', 'Master', 'PhD']
+      - name: marital_status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Married', 'Together', 'Single', 'Divorced', 'Widow']
+      - name: responded
+        tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: false

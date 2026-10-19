@@ -1,0 +1,9 @@
+# API 运行所需的包。模型相关的版本必须和训练时一致，否则 joblib 可能加载失败
+fastapi==0.146.0
+uvicorn==0.53.0
+pydantic==2.14.1
+pandas==3.0.6
+numpy==2.5.4
+scikit-learn==1.9.1
+xgboost==3.4.1
+joblib==1.6.0

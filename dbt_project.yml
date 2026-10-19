@@ -1,0 +1,11 @@
+name: customer_segmentation
+version: "1.0.0"
+config-version: 2
+profile: customer_segmentation
+model-paths: ["models"]
+models:
+  customer_segmentation:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

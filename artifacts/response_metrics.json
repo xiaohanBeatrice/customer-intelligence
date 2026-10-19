@@ -1,0 +1,28 @@
+{
+  "best_model": "xgboost",
+  "cv": {
+    "logistic_regression": {
+      "roc_auc_mean": 0.8905,
+      "roc_auc_std": 0.0271,
+      "pr_auc_mean": 0.6428
+    },
+    "random_forest": {
+      "roc_auc_mean": 0.8986,
+      "roc_auc_std": 0.0122,
+      "pr_auc_mean": 0.6308
+    },
+    "xgboost": {
+      "roc_auc_mean": 0.9055,
+      "roc_auc_std": 0.0164,
+      "pr_auc_mean": 0.6643
+    }
+  },
+  "test": {
+    "roc_auc": 0.9013,
+    "pr_auc": 0.683,
+    "baseline_positive_rate": 0.1519,
+    "top20pct_capture_rate": 0.7015
+  },
+  "n_train": 1764,
+  "n_test": 441
+}

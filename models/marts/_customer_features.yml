@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: customer_features
+    description: "客户特征表，一行一个客户。供分群、预测模型和 API 使用。"
+    columns:
+      - name: customer_id
+        description: "客户唯一 ID"
+        tests: [unique, not_null]
+      - name: total_spent
+        description: "过去 2 年六大品类消费总额"
+        tests: [not_null]
+      - name: preferred_channel
+        description: "购买次数最多的渠道；没有购买记录为 None"
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Store', 'Web', 'Catalog', 'None']
+      - name: education_group
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Undergraduate', 'Graduate', 'Postgraduate']
+      - name: r_score
+        description: "Recency 五分位得分，5 = 最近购买"
+        tests: [not_null]
